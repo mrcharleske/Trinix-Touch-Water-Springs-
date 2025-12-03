@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Trinix Touch Water Springs</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #cceaff, #e6f7ff);
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #003e7e;
+    }
+
+    .container {
+        max-width: 480px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 190px;
+        margin: 25px auto;
+        display: block;
+        border-radius: 12px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #0055b8;
+    }
+
+    .btn {
+        display: block;
+        padding: 16px;
+        margin: 14px 0;
+        background: linear-gradient(135deg, #007bff, #00a2ff);
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+        transition: transform 0.15s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+        opacity: 0.92;
+        transform: scale(1.03);
+    }
+
+    .btn:active {
+        transform: scale(0.97);
+    }
+
+    /* Popup Background */
+    .popup-bg {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.55);
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    /* Popup Box */
+    .popup {
+        background: white;
+        padding: 22px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 360px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    .close {
+        float: right;
+        font-size: 22px;
+        cursor: pointer;
+        color: #444;
+        font-weight: bold;
+    }
+
+    h3 {
+        margin: 10px 0 15px;
+        color: #004c99;
+    }
+
+    .opt {
+        display: block;
+        padding: 14px;
+        margin: 12px 0;
+        background: linear-gradient(135deg, #00a2ff, #0091e6);
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        box-shadow: 0 3px 10px rgba(0, 160, 255, 0.3);
+        transition: transform 0.15s ease;
+    }
+
+    .opt:hover {
+        transform: scale(1.03);
+    }
+
+    .opt:active {
+        transform: scale(0.97);
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <img src="trinix-logo.png" class="logo" alt="Trinix Logo">
+
+    <h2>Trinix Touch Water Springs</h2>
+
+    <a class="btn" href="tel:+254708524200">📞 Call Delivery</a>
+
+    <a class="btn" href="#" onclick="openPopup()">💬 Get Quotation</a>
+
+    <a class="btn" href="https://maps.app.goo.gl/aZNqLtUBCUNkGqh98" target="_blank">
+        📍 View Location / Directions
+    </a>
+</div>
+
+<!-- POPUP -->
+<div class="popup-bg" id="popup">
+    <div class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h3>Select a WhatsApp Message</h3>
+
+        <a class="opt" href="https://wa.me/254713017313?text=Hello%20Trinix%2C%20I%20would%20like%20to%20order%2050%20bales%20of%20%C2%BD%20litres%20for%20a%20wedding%20function.%20Please%20quote.">
+            Wedding Order – 50 Bales
+        </a>
+
+        <a class="opt" href="https://wa.me/254713017313?text=Hello%20Trinix%2C%20I%20want%20a%20price%20quote%20for%20regular%20delivery%20(weekly)%20-%2020%20bales%20monthly.">
+            Weekly Delivery – 20 Bales Monthly
+        </a>
+    </div>
+</div>
+
+<script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+    }
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
